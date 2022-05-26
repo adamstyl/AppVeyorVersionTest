@@ -30,4 +30,4 @@ for:
     branches:
       only:
         - develop      
-    version: {version}-dev
+    version: '{version}-dev'
