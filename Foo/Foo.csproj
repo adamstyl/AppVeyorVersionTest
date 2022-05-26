@@ -17,7 +17,7 @@
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>bin\$(Configuration)\</PackageOutputPath>
-    <Version>$(AssemblyVersion)-local</Version>
+    <Version>$(AssemblyVersion)</Version>
     <PackageFileName>$(PackageId).$(Version).nupkg</PackageFileName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
