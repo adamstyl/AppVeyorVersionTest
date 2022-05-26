@@ -1,0 +1,33 @@
+version: 5.9.15.{build}
+branches:
+  only:
+    - master
+configuration: Release
+before_build:
+  - cmd: nuget restore
+build:
+  verbosity: normal
+artifacts:
+  - path: Foo\bin\$(configuration)\*.nupkg
+assembly_info:
+  patch: true
+  file: '**\VersionInfo.cs'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+nuget:
+  account_feed: true
+  project_feed: true
+for:
+  -
+    branches:
+      only:
+        - master
+      #This will reset the build number to zero.
+      #It will always work as long as every merge to master is a different version
+    install:
+      - ps: Set-AppveyorBuildVariable -Name APPVEYOR_BUILD_NUMBER -Value 0
+  -
+    branches:
+      only:
+        - develop      
+    version: {version}-dev
