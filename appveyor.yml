@@ -1,5 +1,5 @@
-version-base: 5.9.15
-version: {version-base}.{build}
+version: &ver
+  5.9.15.{build}
 branches:
   only:
     - master
@@ -31,4 +31,4 @@ for:
     branches:
       only:
         - develop      
-    version: {version-base}'-dev'
+    version: *ver '-dev'
