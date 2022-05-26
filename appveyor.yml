@@ -1,3 +1,4 @@
+
 version: 5.9.15.{build}
 branches:
   only:
@@ -30,4 +31,4 @@ for:
     branches:
       only:
         - develop      
-    version: '{version}-dev'
+    version: {version}'-dev'
