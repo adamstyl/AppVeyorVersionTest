@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Foo</id>
+    <version>$version$</version>
+    <authors>adamstyl</authors>
+    <copyright>Stelios Adamantidis</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Some description</description>
+  </metadata>
+</package>
