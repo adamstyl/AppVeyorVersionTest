@@ -1,15 +1,16 @@
-version: 5.9.15
+version: 5.9.7
 branches:
   only:
     - master
 configuration: Release
 before_build:
   - cmd: nuget restore
+  - ps: nuget help | select -First 1
 build:
   publish_nuget: true
   verbosity: normal
-artifacts:
-  - path: Foo\bin\$(configuration)\*.nupkg
+#artifacts:
+#  - path: Foo\bin\$(configuration)\*.nupkg
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.cs'
@@ -31,4 +32,4 @@ for:
     branches:
       only:
         - develop      
-    version: 5.9.15-dev{build}
+    version: 5.9.7-dev{build}
