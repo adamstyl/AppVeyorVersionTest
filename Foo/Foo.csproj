@@ -12,9 +12,9 @@
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <!--<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageOutputPath>bin\$(Configuration)\</PackageOutputPath>
-    <!--<Version>$(AssemblyVersion)</Version>
+    <Version>$(AssemblyVersion)</Version>
     <PackageFileName>$(PackageId).$(Version).nupkg</PackageFileName>-->
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
