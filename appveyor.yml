@@ -24,8 +24,5 @@ for:
     branches:
       only:
         - develop      
-    
-    dotnet_csproj:
-      patch: true
-      file: '**\*.csproj'
-      informational_version: {version}-dev{build}
+    build_script:
+      - dotnet build AppVeyorVersionTest.sln --version-suffix "dev-{build}"
