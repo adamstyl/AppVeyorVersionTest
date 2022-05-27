@@ -6,6 +6,7 @@ configuration: Release
 before_build:
   - cmd: nuget restore
 build:
+  publish_nuget: true
   verbosity: normal
 artifacts:
   - path: Foo\bin\$(configuration)\*.nupkg
