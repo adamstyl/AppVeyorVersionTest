@@ -9,12 +9,6 @@ build:
   verbosity: normal
 artifacts:
   - path: Foo\bin\$(configuration)\*.nupkg
-assembly_info:
-  patch: true
-  file: '**\AssemblyInfo.cs'
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
 nuget:
   account_feed: true
   project_feed: true
@@ -31,4 +25,8 @@ for:
     branches:
       only:
         - develop      
-    version: 5.9.7-dev{build}
+    
+    dotnet_csproj:
+      patch: true
+      file: '**\*.csproj'
+      version_suffix: -dev{build}
