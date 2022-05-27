@@ -31,4 +31,4 @@ for:
     branches:
       only:
         - develop      
-    version: 5.9.7-dev{build}
+    version: 5.9-dev{build}
