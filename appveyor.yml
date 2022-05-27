@@ -5,7 +5,6 @@ branches:
 configuration: Release
 before_build:
   - cmd: nuget restore
-  - ps: nuget help | select -First 1
 build:
   publish_nuget: true
   verbosity: normal
