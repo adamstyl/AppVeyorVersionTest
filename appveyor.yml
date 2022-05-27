@@ -6,10 +6,9 @@ configuration: Release
 before_build:
   - cmd: nuget restore
 build:
-  publish_nuget: true
   verbosity: normal
-#artifacts:
-#  - path: Foo\bin\$(configuration)\*.nupkg
+artifacts:
+  - path: Foo\bin\$(configuration)\*.nupkg
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.cs'
