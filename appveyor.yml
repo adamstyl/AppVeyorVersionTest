@@ -29,7 +29,8 @@ for:
       #This will reset the build number to zero.
       #It will always work as long as every merge to master is a different version
     install:
-      - ps: Set-AppveyorBuildVariable -Name APPVEYOR_BUILD_NUMBER -Value 0
+      - echo into install %APPVEYOR_BUILD_NUMBER%
+      - ps: Set-AppveyorBuildVariable -Name 'APPVEYOR_BUILD_NUMBER' -Value '0'
   -
     branches:
       only:
