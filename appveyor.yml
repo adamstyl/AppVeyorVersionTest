@@ -25,4 +25,4 @@ for:
       only:
         - develop
     build_script:
-      - dotnet build AppVeyorVersionTest.sln --version-suffix dev-{build}
+      - dotnet build AppVeyorVersionTest.sln --version-suffix "dev%APPVEYOR_BUILD_NUMBER%"
