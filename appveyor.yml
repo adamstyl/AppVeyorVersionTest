@@ -1,3 +1,4 @@
+version: 5.9.16
 branches:
   only:
     - master
@@ -8,6 +9,15 @@ build:
   verbosity: normal
 artifacts:
   - path: Foo\bin\$(configuration)\*.nupkg
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+#  version: '{version}'
+  version_prefix: '{version}'
+#  package_version: '{version}'
+#  assembly_version: '{version}'
+#  file_version: '{version}'
+#  informational_version: '{version}'
 nuget:
   account_feed: true
   project_feed: true
@@ -24,5 +34,4 @@ for:
     branches:
       only:
         - develop
-    build_script:
-      - dotnet build AppVeyorVersionTest.sln --version-suffix "dev%APPVEYOR_BUILD_NUMBER%"
+    version: 5.9.16-dev{build}
