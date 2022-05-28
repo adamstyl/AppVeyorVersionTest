@@ -29,7 +29,7 @@ for:
       #This will reset the build number to zero.
       #It will always work as long as every merge to master is a different version
     install:
-      - ps: >-
+      - ps: |
           $apiUrl = 'https://ci.appveyor.com/api'
           $accountName = $env:APPVEYOR_ACCOUNT_NAME
           $projectSlug = $env:APPVEYOR_PROJECT_SLUG
