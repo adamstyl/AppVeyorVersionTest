@@ -11,8 +11,8 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <VersionPrefix>5.9.16</VersionPrefix>
-    <!--<AssemblyVersion>5.9.16</AssemblyVersion>
+    <VersionPrefix>5.9.17</VersionPrefix>
+    <!--<AssemblyVersion>5.9.17</AssemblyVersion>
     <FileVersion>$(AssemblyVersion)</FileVersion>
     <InformationalVersion>$(AssemblyVersion)-foo</InformationalVersion>
     <PackageVersion>$(AssemblyVersion)-bar</PackageVersion>-->
