@@ -1,4 +1,4 @@
-version: 5.9.16
+version: 5.9.17
 branches:
   only:
     - master
@@ -8,7 +8,7 @@ before_build:
 build:
   verbosity: normal
 artifacts:
-  - path: Foo\bin\$(configuration)\*.nupkg
+  - path: Foo\bin\$(configuration)\*.*nupkg
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
@@ -34,4 +34,4 @@ for:
     branches:
       only:
         - develop
-    version: 5.9.16-dev{build}
+    version: 5.9.17-dev{build}
